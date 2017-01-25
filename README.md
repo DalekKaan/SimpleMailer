@@ -5,6 +5,9 @@ Simple mail sender class for PHP projects. Uses `mail()` function. You need ty s
 ## Code Example
 
 ```php
+SimpleMailer::$errorsCollector=new ErrorsCollector();
+SimpleMailer::$feedback_email="author@email.com";
+
 $mailer=new SimpleMailer();
 $mailer->from="Rib Selezen";
 $mailer->to=array("first@email.com","second@email.com","third@email.com");
