@@ -7,7 +7,7 @@ class SimpleMailer {
     /**
      * @var IErrorsCollector собрщик ошибок
      */
-    private static $errorsCollector;
+    public static $errorsCollector;
 
     /**
      * @var string E-mail обратной связи (указывается в письме в поле "От")
